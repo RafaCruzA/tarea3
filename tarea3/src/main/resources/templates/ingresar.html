@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <div class="container-fluid">
+			<h1 class="mt-4">Ingreso de nuevo alumno</h1>
+			<div class="card mb-4">
+            	<div class="card-body">
+            		<p class="mb-0">Ingrese sus credenciales:</p><br/>
+            		<form method="post" th:action="@{/alumno}">
+	            		<div><label>Nombres: </label><input id="nombre" type="text" placeholder="No menor a 1 caracter ni mas de 25 caracteres" name="nombre" /></div>
+	                    <div><label>Apellidos: </label><input id="apellidos" type="text" placeholder="No menor a 1 caracter ni mas de 25 caracteres" name="apellidos"/></div>
+	                    <div><label>Fecha de nacimiento: </label><input id="fechNac" type="date" placeholder="dd/mm/aaaa" name="fechaNacimiento"/></div>
+	                    <div><label>Lugar de nacimiento: </label><input id="lugNac" type="text" placeholder="Ingrese su lugar de nacimiento" name="lugarNacimiento"/></div>
+	                    <div><label>Instituto o Colegio de procedencia: </label><input id="instituto" type="text" placeholder="Ingrese el instituto o colegio de procedencia" name="instituto"/></div>
+	                    <div><label>Telefono Fijo: </label><input id="telF" type="tel"  placeholder="Ingrese su numero telefono fijo" name="telFijo"/></div>
+	                    <div><label>Telefono movil: </label><input  id="cel" type="tel" placeholder="Ingrese su numero de telefono movil" name="celular"/></div>
+	                    
+	                    <div><input type="submit"  value=" Guardar alumno "></a></div>
+	                </form>
+            	</div>
+            </div>
+
+</body>
+</html>
