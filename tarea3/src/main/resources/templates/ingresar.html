@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+<style>
+label{
+	font-size: 18px;
+
+	}
+</style>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
- <div class="container-fluid">
-			<h1 class="mt-4">Ingreso de nuevo alumno</h1>
-			<div class="card mb-4">
-            	<div class="card-body">
-            		<p class="mb-0">Ingrese sus credenciales:</p><br/>
-            		<form method="post" th:action="@{/alumno}">
-	            		<div><label>Nombres: </label><input id="nombre" type="text" placeholder="No menor a 1 caracter ni mas de 25 caracteres" name="nombre" /></div>
-	                    <div><label>Apellidos: </label><input id="apellidos" type="text" placeholder="No menor a 1 caracter ni mas de 25 caracteres" name="apellidos"/></div>
-	                    <div><label>Fecha de nacimiento: </label><input id="fechNac" type="date" placeholder="dd/mm/aaaa" name="fechaNacimiento"/></div>
-	                    <div><label>Lugar de nacimiento: </label><input id="lugNac" type="text" placeholder="Ingrese su lugar de nacimiento" name="lugarNacimiento"/></div>
-	                    <div><label>Instituto o Colegio de procedencia: </label><input id="instituto" type="text" placeholder="Ingrese el instituto o colegio de procedencia" name="instituto"/></div>
-	                    <div><label>Telefono Fijo: </label><input id="telF" type="tel"  placeholder="Ingrese su numero telefono fijo" name="telFijo"/></div>
-	                    <div><label>Telefono movil: </label><input  id="cel" type="tel" placeholder="Ingrese su numero de telefono movil" name="celular"/></div>
-	                    
-	                    <div><input type="submit"  value=" Guardar alumno "></a></div>
-	                </form>
-            	</div>
-            </div>
+<h1>Ingreso de nuevo alumno</h1>
+	
+	<form method="post" th:action="@{/alumno}">
+		<div><label class="normal-text">Nombres: </label></div>
+		<br>
+		<div><input id="nombre" type="text" placeholder="No menor a 1 caracter ni mas de 25 caracteres" name="nombre" style="width: 300px; height:30px"/></div>
+	    <br>
+	    <div><label>Apellidos: </label></div>
+	    <br>
+	    <div><input id="apellidos" type="text" placeholder="No menor a 1 caracter ni mas de 25 caracteres" name="apellidos" style="width: 300px; height:30px"/></div>
+	    <br>
+	    <div><label>Fecha de nacimiento: </label></div>
+	    <br>
+	    <div><input id="fechNac" type="date" placeholder="dd/mm/aaaa" name="fechaNacimiento" style="width: 300px; height:30px"/></div>
+	   	<br>
+	   	<div><label>Lugar de nacimiento: </label></div>
+	   	<br>
+	   	<div><input id="lugNac" type="text" placeholder="Ingrese su lugar de nacimiento" name="lugarNacimiento" style="width: 300px; height:30px"/></div>
+	   	<br>
+	   	<div><label>Instituto o Colegio de procedencia: </label></div>
+	   	<br>
+	   	<div><input id="instituto" type="text" placeholder="Ingrese el instituto o colegio de procedencia" name="instituto" style="width: 300px; height:30px"/></div>
+	   	<br>
+	   	<div><label>Telefono Fijo: </label></div>
+	   	<br>
+	   	<div><input id="telF" type="tel"  placeholder="Ingrese su numero telefono fijo" name="telFijo" style="width: 300px; height:30px"/></div>
+	    <br>
+	    <div><label>Telefono movil: </label></div>
+	    <br>
+	    <div><input  id="cel" type="tel" placeholder="Ingrese su numero de telefono movil" name="celular" style="width: 300px; height:30px"/></div>
+	    <br>
+	    <br>
+	    <div><input type="submit"  value=" Guardar alumno" style="width: 150px; height:35px; background-color:DodgerBlue"></a></div>
+	    
+	    </form>
 
 </body>
 </html>

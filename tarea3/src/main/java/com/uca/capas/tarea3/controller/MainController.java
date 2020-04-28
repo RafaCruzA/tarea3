@@ -52,35 +52,35 @@ public class MainController {
 		}
 		
 		if(lugarNacimiento.length()<1) {
-			lista.add("El campo debe llevar al menos un caracter");
+			lista.add("El campo Lugar de nacimiento debe llevar al menos un caracter");
 		}
 		
 		
 		if(lugarNacimiento.length()>25) {
-			lista.add("El campo no puede llevar mas de 25 caracteres");
+			lista.add("El campo Lugar de nacimiento no puede llevar mas de 25 caracteres");
 		}
 		
 		if(instituto.length()<1) {
-			lista.add("El campo debe contener al menos un caracter");
+			lista.add("El campo Instituto o Colegio de procedencia debe contener al menos un caracter");
 		}
 		
 		
 		if(instituto.length()>100) {
-			lista.add("El campo no puede llevar mas de 100 caracteres");
+			lista.add("El campo Instituto o Colegio de procedencia no puede llevar mas de 100 caracteres");
 		}
 		
 		
 		if(isNumeric(telFijo)== false) {
-			lista.add("El campo debe contener solamente numeros");
+			lista.add("El campo Telefono fijo debe contener solamente numeros");
 		}else {
 			if(telFijo.length() != 8) {
-				lista.add("Numero de telefono debe contener exactamente 8 numeros");
+				lista.add("El numero de telefono debe contener exactamente 8 numeros");
 			}
 		}
 		
 		
 		if(isNumeric(celular)== false) {
-			lista.add("El campo debe contener solamente numeros");
+			lista.add("El campo Telefono movil debe contener solamente numeros");
 		}else {
 			if(celular.length() != 8) {
 				lista.add("El Numero de celular debe contener exactamente 8 numeros");

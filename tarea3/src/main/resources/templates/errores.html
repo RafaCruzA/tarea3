@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+table {
+  border-spacing: 20px;
+  font-size: 18px;
+}
+</style>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<h1>Errores encontrados</h1>
 <body>
-<div class="container-fluid">
-<div class="card mb-4">
-            	<div class="card-body">
-            		<table>
-            			<tr th:each="e : ${errores}">
-            				<td th:text="${e}" />
-            			</tr>
-            		</table>
-            	</div>
-            </div>
-              </div>
+	 <table>
+       <tr th:each="e : ${errores}">
+           <td th:text="${e}" />
+            </tr>
+       </table>           
 </body>
 </html>
